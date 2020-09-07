@@ -1,4 +1,4 @@
-#ocial Security Number
+#Social Security Number
 Console app that lets a user enter a social security numeber upon which the gender and age of the person ia reported
 
 ##Getting started
