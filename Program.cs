@@ -40,9 +40,10 @@ namespace SocialSecurityNumber
                     socialSecurityNumber = Console.ReadLine();
                     Console.Clear();
                 }
-
+               
                 int genderNumber = Convert.ToInt32(socialSecurityNumber.Substring(socialSecurityNumber.Length - 2, 1));
 
+                //string gender = "Female" the penultimate even digit of the social security number is a woman
                 string gender = genderNumber % 2 == 0 ? "Female" : "Male";
 
                 DateTime birthDate = DateTime.ParseExact(socialSecurityNumber.Substring(0, 8), "yyyyMMdd", CultureInfo.InvariantCulture);
